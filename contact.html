@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- BS 5 CSS CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+  <!-- Fonts CDN Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- EmailJs JS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 py-3 border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1" href="index.html"><span class="text-primary">Eitr </span>Alward</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="specialties-section text-center text-white p-5" style="background-image: url('img/contact3.jpg');">
+    <div class="container mt-3">
+      <h2 class="specialties-heading fw-bold fs-3 fs-md-2 text-wrap">
+        We're Here to <span class="text-danger">Help You</span>
+      </h2>
+      <p class="lead text-light mt-4">
+        Whether you have a question, need support, or want to collaborate, our team is ready to assist you. Reach out to
+        us and we’ll get back to you promptly.
+      </p>
+      <p class="text-uppercase text-warning fs-6 mt-4">
+        <strong>Your Connection to Success Starts Here</strong>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Success Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Success</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Your message has been sent successfully!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error Modal -->
+  <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="errorModalLabel">Error</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Something went wrong. Please try again later.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- form section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-header text-center mb-5">
+        <h1>Contact Us</h1>
+        <hr class="w-25 m-auto">
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-12">
+          <div class="contact-info">
+            <h2>Eitr Alward Technical Services L.L.C</h2>
+            <p><i class="fas fa-map-marker-alt me-2"></i> Dubai Industrial City, Saih Shuaib 2, P1 Block, 8I-SH-630</p>
+            <p><i class="fas fa-envelope me-2"></i>
+              <a href="mailto:eitralwardtechnicalservices@gmail.com"
+                class="email-link">eitralwardtechnicalservices@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone-alt me-2"></i>
+              <a href="tel:+971563208504">+971 563 208 504</a>
+            </p>
+            <p><i class="fas fa-user me-2"></i> Prakash Kunwar, Owner</p>
+            <p><i class="fas fa-mobile-alt me-2"></i>
+              <a href="tel:+971563208504">+971 563 208 504</a>
+            </p>
+
+            <h2 class="mt-5">Associated Nepali Manpower Agency</h2>
+            <p><i class="fa fa-building me-2"></i> The Power House Overseas Concern Pvt. Ltd</p>
+
+            <p><i class="fas fa-map-marker-alt me-2"></i> Sinamangal, Kathmandu</p>
+            <p><i class="fas fa-id-card me-2"></i> 741/064/065</p>
+            <p><i class="fas fa-phone-alt me-2"></i>
+              <a href="tel:+9779823773995">+977 982 377 3995</a>
+            </p>
+            <p><i class="fas fa-envelope me-2"></i>
+              <a href="mailto:girispanthi20@gmail.com">girispanthi20@gmail.com</a>
+            </p>
+            <p><i class="fas fa-user me-2"></i> Giris Panthi, Executive Director</p>
+            <p><i class="fas fa-mobile-alt me-2"></i>
+              <a href="tel:+9779851053808">+977 985 105 3808</a>
+            </p>
+            <a href="#" class="btn btn-primary social-btn" style="border-radius: 50%; padding: 10px;">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <form id="contactForm" class="contactForm needs-validation" novalidate>
+            <h2 class="text-center mb-4">Get in Touch</h2>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
+              <label for="floatingName">Your Name</label>
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+              <label for="floatingEmail">Email Address</label>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingPhone" placeholder="Your Phone Number" required>
+              <label for="floatingPhone">Phone Number</label>
+              <div class="invalid-feedback">
+                Please enter your phone number.
+              </div>
+            </div>
+
+            <!-- New Subject Field -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingSubject" placeholder="Subject" required>
+              <label for="floatingSubject">Subject</label>
+              <div class="invalid-feedback">
+                Please enter a subject.
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="floatingMessage" style="height: 100px;"
+                placeholder="Write your message" required></textarea>
+              <label for="floatingMessage">Your Message</label>
+              <div class="invalid-feedback">
+                Please write a message.
+              </div>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-custom py-3">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact link -->
+  <section class="contact my-5" id="contact.html">
+    <div class="container-fluid bg-light">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h1><span class="text-primary">Trying To Find Job In Abroad?</span></h1>
+          </h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-primary text-dark py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold">Eitr Alward Technical Services L.L.C</h5>
+          <p>Your trusted partner for technical services and manpower recruitment in the UAE. We specialize in
+            providing skilled and semi-skilled workers for various fields, ensuring top-notch service and
+            seamless deployment.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light">Home</a></li>
+            <li><a href="about.html" class="text-light">About</a></li>
+            <li><a href="teams.html" class="text-light">Teams</a></li>
+            <li><a href="services.html" class="text-light">Services</a></li>
+            <li><a href="contact.html" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold">Contact Info</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-phone-alt"></i> +971-123-4567</li>
+            <li><i class="fas fa-envelope"></i> eitralwardtechnicalservices@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Dubai Industrial City, Saih Shuaib 2, P1 Block, 8I-SH-630</li>
+          </ul>
+          <div class="social-links mt-3">
+            <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p>&copy; 2025 Eitr Alward Technical Services L.L.C. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BS 5 JS CDN Link -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize EmailJS
+      emailjs.init("XpWSHThiois92yfvl"); // Replace with your public key
+
+      // Bootstrap 5 form validation
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission by default
+
+        // Validate the form
+        if (!form.checkValidity()) {
+          event.stopPropagation(); // Stop event propagation if form is invalid
+          form.classList.add("was-validated"); // Add Bootstrap's validation feedback
+          return; // Exit the function if form is invalid
+        }
+
+        // Proceed with sending email if form is valid
+        form.classList.remove("was-validated");
+
+        // Collect form data
+        const fullname = document.getElementById("floatingName").value;
+        const email = document.getElementById("floatingEmail").value;
+        const phone = document.getElementById("floatingPhone").value;
+        const subject = document.getElementById("floatingSubject").value;
+        const message = document.getElementById("floatingMessage").value;
+
+        // Prepare email data
+        const emailData = {
+          name: fullname,
+          email: email,
+          phone: phone,
+          subject: subject,
+          message: message
+        };
+
+        // Send email using EmailJS
+        emailjs.send("service_78gtfyo", "template_wp3i86h", emailData)
+          .then(function (response) {
+            console.log("Success:", response);
+            // Show success modal
+            const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+            successModal.show();
+            form.reset(); // Clear the form after successful submission
+          })
+          .catch(function (error) {
+            console.error("Error:", error);
+            // Show error modal
+            const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+            errorModal.show();
+          });
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

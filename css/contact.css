@@ -1,0 +1,56 @@
+.social-btn {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.contact-section {
+    background-color: #f2f3f5;
+    color: black;
+    padding: 5vh 0;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.btn-custom {
+    background-color: red;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: blue;
+    color: white;
+}
+
+.contact-info {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 2px;
+}
+
+.contact-info {
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+}
+
+.email-link {
+    display: inline-block;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+}

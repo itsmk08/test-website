@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- BS 5 CSS CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonts CDN Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <style>
+    .content-section {
+      display: none;
+    }
+
+    .active-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .list-group {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(1, 1, 1, 0.3);
+      font-size: 1.5rem;
+      font-family: "Playfair Display", serif;
+    }
+
+    .list-group-item {
+      padding: 20px;
+      border-bottom: 1px solid #d7d5d5;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 py-3 border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1" href="index.html"><span class="text-primary">Eitr </span>Alward</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner section -->
+  <section class="specialties-section text-center text-white p-5" style="background-image: url('img/banner1.jpg');">
+    <div class="container">
+      <h1 class="specialties-heading fw-bold fs-1 fs-md-2 text-wrap">
+        About <span class="text-danger">Us</span>
+      </h1>
+      <p class="text-white mt-4">
+        We are a dedicated team committed to delivering innovative solutions and exceptional results. Since our
+        establishment,
+        we have strived to build lasting relationships with our clients, driven by trust, collaboration, and a shared
+        vision of success.
+      </p>
+      <p class=" text-warning mt-3">
+        With years of experience and expertise, we continue to evolve, embracing challenges and unlocking opportunities
+        to
+        create a positive impact in every project we undertake.
+      </p>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- About Us Section -->
+  <section class="services my-5 py-4 bg-light">
+    <div class="container">
+      <div class="text-center my-5">
+        <h1><span class="text-primary">About Us</span></h1>
+        <hr class="w-25 m-auto">
+      </div>
+
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-md-3">
+          <div class="list-group">
+            <button class="list-group-item list-group-item-action" id="introBtn">Introduction</button>
+            <button class="list-group-item list-group-item-action" id="profileBtn">Company Profile</button>
+            <button class="list-group-item list-group-item-action" id="objectivesBtn">Objectives</button>
+            <button class="list-group-item list-group-item-action" id="messageBtn">Message for Teams</button>
+          </div>
+        </div>
+
+        <div class="col-md-9 m-auto">
+          <div id="introContent" class="content-section mb-5">
+            <h3>Introduction</h3>
+            <p>This is the introduction content.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, id aliquid sequi vero optio facilis nisi
+              voluptatum molestias delectus. Nemo molestiae natus officia! Aspernatur quae expedita eum eos
+              reprehenderit praesentium.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sed blanditiis eligendi dolores illo quia
+              exercitationem consectetur rem molestias cumque distinctio voluptatibus perspiciatis nulla pariatur,
+              voluptatem vero veritatis, iure fuga.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat earum nam ipsam officiis natus
+              asperiores velit consequuntur, sed praesentium beatae nesciunt maxime ducimus illum aspernatur nihil!
+              Labore, placeat iure? Illo!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, deleniti rerum laboriosam in ipsa
+              voluptates aspernatur suscipit aliquam ut a totam, minus eius fuga? A nobis adipisci iure asperiores
+              laboriosam.
+              Similique explicabo odit vel totam laboriosam. Tempora velit vero maiores nesciunt hic recusandae expedita
+              asperiores quam id, praesentium molestias cumque officiis sequi harum dolorum aliquid? Omnis neque rem
+              ducimus necessitatibus.
+              Veritatis sint quaerat facilis! Illum autem reprehenderit maxime molestias non amet. Libero molestias
+              provident quos, nobis sequi eligendi? Vel dolores ducimus quod similique cupiditate quisquam totam
+              consequatur incidunt, nemo illum!
+              Illum vitae eum et at maxime iure deleniti assumenda accusamus, molestias consequuntur repudiandae
+              inventore corrupti numquam sint error alias doloremque, iusto quia laboriosam earum magni quasi rem
+              voluptas odit. Deleniti.
+              Culpa, excepturi enim amet officia, quia officiis totam itaque id, omnis fugit eveniet nemo tempora!
+              Asperiores saepe sunt cumque inventore odit doloribus tenetur! Aliquid voluptate provident eum ipsam fugit
+              dolorum.
+              Nulla dolorem exercitationem quo recusandae veritatis, itaque consectetur facilis quia perferendis iure
+              explicabo cumque quisquam nostrum ut odit debitis. Quas quisquam sed dolor consectetur nobis autem eum,
+              fugit quia impedit!
+              Animi omnis atque repellendus officiis quidem, delectus odio, provident autem culpa adipisci expedita
+              laborum rerum, nemo voluptate libero qui pariatur itaque nesciunt. Neque odit, error quaerat accusantium
+              architecto ipsam perferendis!
+              Quam vel ipsa asperiores debitis veritatis aliquid aspernatur at laudantium quos quidem quasi voluptas
+              tenetur sed porro eum sapiente, consequuntur ducimus animi rem adipisci expedita velit. Aperiam voluptates
+              ad voluptatibus.
+              Neque corporis quisquam magnam modi fuga odit aliquam autem, consectetur ad! Delectus deserunt aut
+              distinctio nihil. Ex vel blanditiis hic, velit saepe a ipsam cum recusandae culpa fugiat iusto quibusdam.
+              Iste odio earum quod ratione quae iusto sint exercitationem aut rem ipsum neque tempore debitis ab, odit,
+              quis eligendi enim. Beatae mollitia eveniet tenetur velit! Repellendus quasi quo qui veritatis?
+            </p>
+          </div>
+          <div id="profileContent" class="content-section">
+            <h3>Company Profile</h3>
+            <p>This is the company profile content.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error nemo, illo facilis tenetur suscipit, harum
+              quasi, odio illum alias ratione amet. Aperiam fugiat recusandae ratione reprehenderit cum repellat iusto
+              harum.
+              Eos vel quia quos fuga, iste, voluptatum odio officia quasi similique, in magnam tempore dolor aliquid.
+              Ducimus nisi ut animi adipisci provident suscipit at quasi optio molestias amet, voluptates voluptatem.
+              Impedit quam officiis ad eius modi vero suscipit qui rerum possimus fuga, magni ipsam sapiente consectetur
+              expedita vitae! Consectetur dolores fugit sunt quam dolore eos voluptas omnis voluptatibus totam rerum.
+              Optio neque a architecto dolores nostrum reprehenderit pariatur libero, ad hic itaque temporibus
+              perspiciatis iusto ut tempora fugiat quam vitae qui autem quod nesciunt? Labore deleniti aliquam molestiae
+              excepturi sequi?
+              Minus cum architecto dignissimos sed aliquid quam asperiores repudiandae modi nam nostrum excepturi dicta
+              totam earum beatae sunt eos, officiis accusantium inventore laboriosam harum? Tempore omnis neque nostrum
+              a enim.
+            </p>
+          </div>
+          <div id="objectivesContent" class="content-section">
+            <h3>Objectives</h3>
+            <p>This is the objectives content.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa magni tenetur quasi magnam iure ab iste
+              optio, fugit in facere vero recusandae aliquid minus tempora, alias est sint, ipsum maxime?
+              Fugiat saepe quae maiores nesciunt temporibus voluptatem at in quia, quis natus eveniet ut asperiores
+              similique odit nemo corporis ad velit tempore repudiandae rerum. Voluptatem, nemo. Provident voluptatibus
+              consequuntur beatae.
+              Eligendi atque totam molestiae consequatur tempora dolorem tempore, odit excepturi cum, est illo ipsum
+              harum obcaecati quae et omnis culpa animi. Voluptas quas est rem explicabo odio quos, quasi magnam.
+              Unde beatae reprehenderit quia? Autem dolorum mollitia laudantium voluptas porro asperiores ab totam? Ea
+              totam, consequatur repudiandae cumque molestias neque illo excepturi at eum consectetur ipsam laudantium
+              reiciendis deserunt enim!
+              Est laborum minima in sit, voluptate, vel eaque pariatur esse adipisci incidunt rem architecto provident
+              placeat veritatis. Molestiae eos accusamus nemo! Minima consequatur quidem quae repellat ipsum molestiae
+              quam repellendus.
+            </p>
+          </div>
+          <div id="messageContent" class="content-section">
+            <h3>Message for Teams</h3>
+            <p>This is the message for teams content.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsum veniam in animi ad est deserunt dicta
+              cupiditate, adipisci reprehenderit illum nemo aut quaerat illo sint ab vero? Asperiores, nisi.
+              Porro fugit eaque, expedita a, error sed obcaecati architecto sit quam nam mollitia? Placeat dolores
+              dolore quis quos ratione dolor laborum nihil expedita. Aspernatur consectetur amet dicta reprehenderit
+              repudiandae voluptate?
+              Similique modi, ducimus eos dicta explicabo maxime numquam dolore, autem tempore cumque repellat fuga
+              commodi fugit et. Repellendus culpa, totam non saepe a iste architecto eveniet obcaecati dolores!
+              Suscipit, cumque!
+              Voluptatem animi eius ipsum omnis incidunt, iste vitae atque tenetur nesciunt repudiandae soluta, veniam
+              libero! Excepturi, laboriosam cupiditate et blanditiis minus quaerat libero beatae ipsam. Molestias
+              dolorum saepe amet iure.
+              Ab consectetur libero enim unde culpa voluptatem explicabo at nesciunt aliquam repudiandae saepe corrupti
+              hic autem amet non fuga praesentium, atque eaque alias, commodi corporis quis! Dolor itaque quam
+              repellendus.
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+  </section>
+
+
+  <!-- Contact link -->
+  <section class="contact my-5" id="contact.html">
+    <div class="container-fluid bg-light">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h1><span class="text-primary">Trying To Find Job In Abroad?</span></h1>
+          </h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-primary text-dark py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold">Eitr Alward Technical Services L.L.C</h5>
+          <p>Your trusted partner for technical services and manpower recruitment in the UAE. We specialize in
+            providing skilled and semi-skilled workers for various fields, ensuring top-notch service and
+            seamless deployment.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light">Home</a></li>
+            <li><a href="about.html" class="text-light">About</a></li>
+            <li><a href="teams.html" class="text-light">Teams</a></li>
+            <li><a href="services.html" class="text-light">Services</a></li>
+            <li><a href="contact.html" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold">Contact Info</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-phone-alt"></i> +971-123-4567</li>
+            <li><i class="fas fa-envelope"></i> eitralwardtechnicalservices@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Dubai Industrial City, Saih Shuaib 2, P1 Block, 8I-SH-630</li>
+          </ul>
+          <div class="social-links mt-3">
+            <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p>&copy; 2025 Eitr Alward Technical Services L.L.C. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BS 5 JS CDN Link -->
+
+  <script>
+
+    function showContent(contentId, buttonId) {
+      // Hide all content sections
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => section.style.display = 'none');
+
+      // Remove active state from all buttons
+      const buttons = document.querySelectorAll('.list-group-item');
+      buttons.forEach(button => button.classList.remove('active'));
+
+      // Display the selected content
+      const contentElement = document.getElementById(contentId);
+      if (contentElement) contentElement.style.display = 'block';
+
+      // Add active state to the selected button
+      const buttonElement = document.getElementById(buttonId);
+      if (buttonElement) buttonElement.classList.add('active');
+
+      // Store the selected content and button in localStorage
+      localStorage.setItem('selectedContent', contentId);
+      localStorage.setItem('selectedButton', buttonId);
+    }
+
+    // Attach event listeners dynamically to all buttons in the list group
+    document.querySelectorAll('.list-group-item').forEach(button => {
+      button.addEventListener('click', function () {
+        const contentId = button.id.replace('Btn', 'Content'); // Derive contentId from buttonId
+        showContent(contentId, button.id);
+      });
+    });
+
+    // Initialize the page by checking the saved state in localStorage
+    window.onload = function () {
+      const savedContent = localStorage.getItem('selectedContent');
+      const savedButton = localStorage.getItem('selectedButton');
+
+      if (savedContent && savedButton) {
+        // If saved state exists, load it
+        showContent(savedContent, savedButton);
+      } else {
+        // If no saved state, load the Introduction by default
+        showContent('introContent', 'introBtn');
+      }
+    };
+
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
