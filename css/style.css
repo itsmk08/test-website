@@ -223,19 +223,23 @@ p {
     margin: auto;
 }
 
+.specialties-heading span {
+    color: yellow;
+}
+
 .stat-box {
     text-align: center;
     padding: 10px;
 }
 
 .stat-number {
-    font-size: .7rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .stat-label {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
