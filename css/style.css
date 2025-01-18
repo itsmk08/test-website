@@ -223,30 +223,19 @@ p {
     margin: auto;
 }
 
-.specialties-heading {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.specialties-heading span {
-    color: red;
-}
-
 .stat-box {
     text-align: center;
     padding: 10px;
 }
 
 .stat-number {
-    font-size: 2rem;
+    font-size: .7rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .stat-label {
     font-size: 0.9rem;
-    color: #dcdcdc;
 }
 
 @media (max-width: 768px) {
